@@ -10,6 +10,10 @@ namespace EnthusiasticMoose
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine();
 
+    
+            // while(Console.ReadKey().Key != ConsoleKey.Enter)
+            do
+            {
             //Ask a question
             MooseQuestion ();
             Console.ReadLine();
@@ -96,6 +100,9 @@ namespace EnthusiasticMoose
             {
                 Console.WriteLine("You may rely on it.");
             }
+            }
+            while(Console.ReadKey().Key != ConsoleKey.Enter);
+            
         }
 
         static void MooseQuestion ()
